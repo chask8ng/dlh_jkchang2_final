@@ -227,7 +227,21 @@ def train_model(model):
 %memit train_model(model)
 
 """
-Get predictions
+Visualize results
 """
-predicted_prob = model.predict(x=X_test, verbose=1)
-print(predicted_prob)
+import matplotlib.pyplot as plt
+
+
+def plot_graphs(history, metric):
+  plt.plot(history.history[metric])
+  plt.plot(history.history['val_'+metric], '')
+  plt.xlabel("Epochs")
+  plt.ylabel(metric)
+  plt.legend([metric, 'val_'+metric])
+plt.figure(figsize=(16, 8))
+plt.subplot(1, 2, 1)
+plot_graphs(training, 'accuracy')
+plt.ylim(None, 1)
+plt.subplot(1, 2, 2)
+plot_graphs(training, 'loss')
+plt.ylim(0, None)
