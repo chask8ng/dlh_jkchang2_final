@@ -25,6 +25,7 @@ The keywords are then used to train/test a bi-directional LSTM model to predict 
 
 ![Screen Shot 2022-04-29 at 7 44 54 AM](https://user-images.githubusercontent.com/87827828/165938562-de0f26cb-78dc-47e3-9ecb-9c566741613b.png)
 
+```
 Model: "model"
 __________________________________________________________________________________________________
  Layer (type)                   Output Shape         Param #     Connected to                     
@@ -55,4 +56,4 @@ ________________________________________________________________________________
 Total params: 12,246,589
 Trainable params: 8,889,289
 Non-trainable params: 3,357,300
-
+```
