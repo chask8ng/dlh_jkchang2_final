@@ -82,3 +82,30 @@ Epoch 10/10
 peak memory: 6131.57 MiB, increment: 5288.42 MiB
 ```
 ![Screen Shot 2022-04-29 at 12 03 32 PM](https://user-images.githubusercontent.com/87827828/165981870-a2d8e1d4-d64f-451e-bc62-99f8b754c3cd.png)
+---
+Ablation
+
+1. Not using attention (removed layer)
+```
+Epoch 1/10
+9/9 - 94s - loss: 1.4787 - accuracy: 0.5714 - val_loss: 1.1250 - val_accuracy: 0.7069 - 94s/epoch - 10s/step
+Epoch 2/10
+9/9 - 78s - loss: 1.0782 - accuracy: 0.7037 - val_loss: 1.0075 - val_accuracy: 0.7069 - 78s/epoch - 9s/step
+Epoch 3/10
+9/9 - 78s - loss: 0.9777 - accuracy: 0.7037 - val_loss: 0.9652 - val_accuracy: 0.7069 - 78s/epoch - 9s/step
+Epoch 4/10
+9/9 - 78s - loss: 0.9566 - accuracy: 0.7037 - val_loss: 0.9435 - val_accuracy: 0.7069 - 78s/epoch - 9s/step
+Epoch 5/10
+9/9 - 78s - loss: 0.9426 - accuracy: 0.7037 - val_loss: 0.9409 - val_accuracy: 0.7069 - 78s/epoch - 9s/step
+Epoch 6/10
+9/9 - 78s - loss: 0.9306 - accuracy: 0.7037 - val_loss: 0.9254 - val_accuracy: 0.7069 - 78s/epoch - 9s/step
+Epoch 7/10
+9/9 - 78s - loss: 0.8942 - accuracy: 0.7037 - val_loss: 0.8489 - val_accuracy: 0.7069 - 78s/epoch - 9s/step
+Epoch 8/10
+9/9 - 77s - loss: 0.8293 - accuracy: 0.7037 - val_loss: 0.7760 - val_accuracy: 0.7069 - 77s/epoch - 9s/step
+Epoch 9/10
+9/9 - 77s - loss: 0.7820 - accuracy: 0.7037 - val_loss: 0.7259 - val_accuracy: 0.7069 - 77s/epoch - 9s/step
+Epoch 10/10
+9/9 - 78s - loss: 0.7634 - accuracy: 0.7037 - val_loss: 0.7729 - val_accuracy: 0.7069 - 78s/epoch - 9s/step
+```
+![Screen Shot 2022-04-29 at 1 25 48 PM](https://user-images.githubusercontent.com/87827828/165993462-682b9dfa-3c2b-4b60-9ca7-cd2208e6dd5f.png)
