@@ -109,3 +109,17 @@ Epoch 10/10
 9/9 - 78s - loss: 0.7634 - accuracy: 0.7037 - val_loss: 0.7729 - val_accuracy: 0.7069 - 78s/epoch - 9s/step
 ```
 ![Screen Shot 2022-04-29 at 1 25 48 PM](https://user-images.githubusercontent.com/87827828/165993462-682b9dfa-3c2b-4b60-9ca7-cd2208e6dd5f.png)
+
+Student results:
+| Model       | Loss        | Percent Improved |
+| ------------| ------------|------------------|
+| BiDirectional LSTM without attention      | 0.7729       | 0
+| BiDirectional LSTM with attention   | 0.7331        | 5.1
+
+Paper results:
+| Model       | Loss        | Percent Improved |
+| ------------| ------------|------------------|
+| BiDirectional LSTM without attention      | 0.00272      | 0
+| BiDirectional LSTM with attention   | 0.00204        | 25
+---
+
