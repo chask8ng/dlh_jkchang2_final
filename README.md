@@ -122,4 +122,14 @@ Paper results:
 | BiDirectional LSTM without attention      | 0.00272      | 0
 | BiDirectional LSTM with attention   | 0.00204        | 25
 ---
+Citation
 
+Ying Yu, Min Li, Liangliang Liu, Zhihui Fei, Fang-Xiang Wu, Jianxin Wang,
+Automatic ICD code assignment of clinical notes based on multilayer attention BiRNN,
+Journal of Biomedical Informatics,
+Volume 91,
+2019,
+103114,
+ISSN 1532-0464,
+https://doi.org/10.1016/j.jbi.2019.103114.
+(https://www.sciencedirect.com/science/article/pii/S1532046419300322)
