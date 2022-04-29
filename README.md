@@ -81,3 +81,4 @@ Epoch 10/10
 9/9 - 272s - loss: 0.6902 - accuracy: 0.7421 - val_loss: 0.7331 - val_accuracy: 0.7192 - 272s/epoch - 30s/step
 peak memory: 6131.57 MiB, increment: 5288.42 MiB
 ```
+![Screen Shot 2022-04-29 at 12 03 32 PM](https://user-images.githubusercontent.com/87827828/165981870-a2d8e1d4-d64f-451e-bc62-99f8b754c3cd.png)
