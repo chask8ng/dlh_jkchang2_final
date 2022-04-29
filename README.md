@@ -57,3 +57,27 @@ Total params: 12,246,589
 Trainable params: 8,889,289
 Non-trainable params: 3,357,300
 ```
+
+```
+Epoch 1/10
+9/9 - 307s - loss: 1.4799 - accuracy: 0.6270 - val_loss: 1.1442 - val_accuracy: 0.7125 - 307s/epoch - 34s/step
+Epoch 2/10
+9/9 - 279s - loss: 1.0599 - accuracy: 0.6956 - val_loss: 0.9866 - val_accuracy: 0.7125 - 279s/epoch - 31s/step
+Epoch 3/10
+9/9 - 276s - loss: 0.9938 - accuracy: 0.6956 - val_loss: 0.9654 - val_accuracy: 0.7125 - 276s/epoch - 31s/step
+Epoch 4/10
+9/9 - 275s - loss: 0.9809 - accuracy: 0.6956 - val_loss: 0.9341 - val_accuracy: 0.7125 - 275s/epoch - 31s/step
+Epoch 5/10
+9/9 - 274s - loss: 0.9671 - accuracy: 0.6956 - val_loss: 0.9179 - val_accuracy: 0.7125 - 274s/epoch - 30s/step
+Epoch 6/10
+9/9 - 272s - loss: 0.9310 - accuracy: 0.6956 - val_loss: 0.8589 - val_accuracy: 0.7125 - 272s/epoch - 30s/step
+Epoch 7/10
+9/9 - 276s - loss: 0.8069 - accuracy: 0.6970 - val_loss: 0.8002 - val_accuracy: 0.6890 - 276s/epoch - 31s/step
+Epoch 8/10
+9/9 - 272s - loss: 0.7324 - accuracy: 0.7311 - val_loss: 0.7853 - val_accuracy: 0.7081 - 272s/epoch - 30s/step
+Epoch 9/10
+9/9 - 273s - loss: 0.7142 - accuracy: 0.7349 - val_loss: 0.7396 - val_accuracy: 0.7181 - 273s/epoch - 30s/step
+Epoch 10/10
+9/9 - 272s - loss: 0.6902 - accuracy: 0.7421 - val_loss: 0.7331 - val_accuracy: 0.7192 - 272s/epoch - 30s/step
+peak memory: 6131.57 MiB, increment: 5288.42 MiB
+```
