@@ -24,3 +24,35 @@ With the cleaned notes, use word2vec to capture associations of keywords.
 The keywords are then used to train/test a bi-directional LSTM model to predict the target ICD codes.
 
 ![Screen Shot 2022-04-29 at 7 44 54 AM](https://user-images.githubusercontent.com/87827828/165938562-de0f26cb-78dc-47e3-9ecb-9c566741613b.png)
+
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_1 (InputLayer)           [(None, 2980)]       0           []                               
+                                                                                                  
+ embedding (Embedding)          (None, 2980, 100)    3357300     ['input_1[0][0]']                
+                                                                                                  
+ permute (Permute)              (None, 100, 2980)    0           ['embedding[0][0]']              
+                                                                                                  
+ dense (Dense)                  (None, 100, 2980)    8883380     ['permute[0][0]']                
+                                                                                                  
+ attention (Permute)            (None, 2980, 100)    0           ['dense[0][0]']                  
+                                                                                                  
+ multiply (Multiply)            (None, 2980, 100)    0           ['embedding[0][0]',              
+                                                                  'attention[0][0]']              
+                                                                                                  
+ bidirectional (Bidirectional)  (None, 2980, 10)     4240        ['multiply[0][0]']               
+                                                                                                  
+ bidirectional_1 (Bidirectional  (None, 10)          640         ['bidirectional[0][0]']          
+ )                                                                                                
+                                                                                                  
+ dense_1 (Dense)                (None, 64)           704         ['bidirectional_1[0][0]']        
+                                                                                                  
+ dense_2 (Dense)                (None, 5)            325         ['dense_1[0][0]']                
+                                                                                                  
+==================================================================================================
+Total params: 12,246,589
+Trainable params: 8,889,289
+Non-trainable params: 3,357,300
+
