@@ -218,7 +218,7 @@ def train_model(model):
         x=X_train, 
         y=y_train, 
         batch_size=256, 
-        epochs=2, 
+        epochs=10, 
         shuffle=True, 
         verbose=2, 
         validation_split=0.3,
