@@ -144,7 +144,19 @@ Trainable params: 64,773
 Non-trainable params: 3,384,600
 _________________________________________________________________
 ```
+![Screen Shot 2022-04-30 at 10 21 54 AM](https://user-images.githubusercontent.com/87827828/166109453-f7a618b7-0934-4ee4-b9dc-20057cfd494c.png)
 
+Student results:
+| Model       | Loss        | Percent Improved |
+| ------------| ------------|------------------|
+| CNN      | 0.7781      | 0
+| BiDirectional LSTM with attention   | 0.7331        | 5.8
+
+Paper results:
+| Model       | Loss        | Percent Improved |
+| ------------| ------------|------------------|
+| CNN      | 0.00204     | 0
+| BiDirectional LSTM with attention   | 0.00178        | 12.7
 ---
 Citation
 
