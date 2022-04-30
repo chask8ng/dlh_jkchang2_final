@@ -191,6 +191,33 @@ model.compile(
     )
 
 model.summary()
+"""
+Alternative test using CNN instead results in readme
+
+from tensorflow.keras import Sequential, models, layers, preprocessing as kprocessing
+from tensorflow.keras import backend as K
+
+textcnnmodel = Sequential()
+textcnnmodel.add((layers.Input(shape=(len(X_train),))))
+textcnnmodel.add(
+    layers.Embedding(
+        input_dim=embeddings.shape[0],  
+        output_dim=embeddings.shape[1], 
+        weights=[embeddings],
+        input_length=len(X_train), 
+        trainable=False
+    )
+)
+textcnnmodel.add(layers.Conv1D(128, 5, activation='relu'))
+textcnnmodel.add(layers.GlobalMaxPooling1D())
+textcnnmodel.add(layers.Dense(5, activation='relu'))
+#textcnnmodel.add(layers.Dense(1, activation='sigmoid'))
+
+textcnnmodel.compile(optimizer='adam',
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              metrics=['accuracy'])
+textcnnmodel.summary() 
+"""
 
 """
 Model Training
