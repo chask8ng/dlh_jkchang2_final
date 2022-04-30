@@ -121,6 +121,30 @@ Paper results:
 | ------------| ------------|------------------|
 | BiDirectional LSTM without attention      | 0.00272      | 0
 | BiDirectional LSTM with attention   | 0.00204        | 25
+
+2. CNN instead of RNN
+
+```
+Model: "sequential_11"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding_10 (Embedding)    (None, 2980, 100)         3384600   
+                                                                 
+ conv1d_4 (Conv1D)           (None, 2976, 128)         64128     
+                                                                 
+ global_max_pooling1d_4 (Glo  (None, 128)              0         
+ balMaxPooling1D)                                                
+                                                                 
+ dense_8 (Dense)             (None, 5)                 645       
+                                                                 
+=================================================================
+Total params: 3,449,373
+Trainable params: 64,773
+Non-trainable params: 3,384,600
+_________________________________________________________________
+```
+
 ---
 Citation
 
